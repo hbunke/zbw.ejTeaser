@@ -1,0 +1,17 @@
+zbw.ejTeaser Installation
+-------------------------
+
+To install zbw.ejTeaser using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``zbw.ejTeaser`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        zbw.ejTeaser
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
