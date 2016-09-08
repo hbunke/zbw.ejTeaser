@@ -7,5 +7,6 @@
      which supports Plone's "display" menu.
   -->
 <object name="portal_types" meta_type="Plone Types Tool">
-  <!-- -*- extra stuff goes here -*- -->
+  <object name="zbw.ejTeaser.teaser" meta_type="Dexterity FTI" />
+  <object name="zbw.ejTeaser.folder" meta_type="Dexterity FTI" />
 </object>

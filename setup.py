@@ -28,6 +28,7 @@ setup(name='zbw.ejTeaser',
           'setuptools',
           'plone.app.dexterity [grok]',
           'plone.namedfile [blobs]',
+          'plone.formwidget.namedfile'
           # -*- Extra requirements: -*-
       ],
       entry_points="""
