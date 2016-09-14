@@ -28,6 +28,6 @@ class ITeaser(model.Schema):
     form.widget('url', ContentTreeFieldWidget)
     url = schema.Choice(
         title=u"URL",
-        required=True,
+        required=False,
         source=ObjPathSourceBinder(portal_type=['JournalPaper', 'DiscussionPaper'])
     )
