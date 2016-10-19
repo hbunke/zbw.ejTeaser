@@ -25,9 +25,22 @@ class ITeaser(model.Schema):
         required=True
     )
 
-    form.widget('url', ContentTreeFieldWidget)
-    url = schema.Choice(
-        title=u"URL",
+    caption = schema.TextLine(
+        title=u"Image Caption",
+        description=u"Add image description or copyright info here (not required)",
         required=False,
-        source=ObjPathSourceBinder(portal_type=['JournalPaper', 'DiscussionPaper'])
+    )
+
+
+    # form.widget('url', ContentTreeFieldWidget)
+    # url = schema.Choice(
+    #     title=u"URL",
+    #     required=False,
+    #     source=ObjPathSourceBinder(portal_type=['JournalPaper', 'DiscussionPaper'])
+    # )
+
+    url = schema.TextLine(
+        title=u"URL",
+        description=u"Please add the *full* address of the referenced article/page",
+        required=True
     )
