@@ -42,5 +42,5 @@ class ITeaser(model.Schema):
     url = schema.TextLine(
         title=u"URL",
         description=u"Please add the *full* address of the referenced article/page",
-        required=True
+        required=False
     )
