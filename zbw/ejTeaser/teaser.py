@@ -22,7 +22,7 @@ class ITeaser(model.Schema):
 
     picture = NamedBlobImage(
         title=u"Teaser Image",
-        required=True
+        required=False
     )
 
     caption = schema.TextLine(
